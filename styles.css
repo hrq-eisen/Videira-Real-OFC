@@ -64,3 +64,8 @@ button:hover {
 .links a:hover {
     text-decoration: underline;
 }
+
+html {
+    background: url(logo-do-clube-videirareal.png) no-repeat center fixed;
+    background-size: cover;
+  } 
