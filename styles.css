@@ -40,7 +40,7 @@ input {
 button {
     width: 90%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #ff5100;
     border: none;
     border-radius: 5px;
     color: white;
@@ -49,7 +49,7 @@ button {
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: #ffa600;
 }
 
 .links {
@@ -57,7 +57,7 @@ button:hover {
 }
 
 .links a {
-    color: #4CAF50;
+    color: #eeff00;
     text-decoration: none;
 }
 
