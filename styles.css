@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('caminho-para-sua-imagem-de-fundo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+.login-container {
+    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.logo {
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0 0 20px;
+    font-size: 24px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+.links {
+    margin-top: 10px;
+}
+
+.links a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

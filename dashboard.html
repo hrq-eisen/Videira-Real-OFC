@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Classes dos Desbravadores</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .dashboard-container {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+            border-radius: 10px;
+            width: 80%;
+            max-width: 1000px;
+            margin: 0 auto;
+            color: #fff;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        .class-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .class-list li {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #333;
+            border-radius: 5px;
+        }
+
+        .class-list h2 {
+            font-size: 20px;
+            margin: 0 0 10px;
+        }
+
+        .class-list p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .back-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        .back-button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Classes dos Desbravadores</h1>
+        <ul class="class-list">
+            <li>
+                <h2>Classe Explorador</h2>
+                <p>Descrição: A Classe Explorador é voltada para atividades ao ar livre e conhecimentos básicos de sobrevivência.</p>
+            </li>
+            <li>
+                <h2>Classe Aventureiro</h2>
+                <p>Descrição: A Classe Aventureiro foca em habilidades avançadas de navegação e exploração.</p>
+            </li>
+            <li>
+                <h2>Classe Pioneiro</h2>
+                <p>Descrição: A Classe Pioneiro é destinada a jovens que já possuem experiência e desejam se aprofundar em atividades mais desafiadoras.</p>
+            </li>
+            <!-- Adicione mais classes conforme necessário -->
+        </ul>
+        <a href="index.html" class="back-button">Voltar para Login</a>
+    </div>
+</body>
+</html>
