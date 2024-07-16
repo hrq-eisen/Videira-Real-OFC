@@ -8,7 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Definindo credenciais válidas
     const validCredentials = [
 
-        { username: 'Hortencia', password: '181409' },
+        { username: 'Desbravdor1', password: 'desbravador123' },
   
     ];
 
