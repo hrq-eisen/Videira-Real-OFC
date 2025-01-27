@@ -1,26 +1,18 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
+    event.preventDefault();
 
-    // Obtendo os valores dos campos
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
+    var username = document.getElementById('username').value;
+    var password = document.getElementById('password').value;
+    var errorMessage = document.getElementById('error-message');
 
-    // Definindo credenciais válidas
-    const validCredentials = [
-
-        { username: 'Desbravador1', password: 'desbravador123' },
-        { username: 'Hortencia', password: 'diretora2025' },
-  
-    ];
-
-    // Verifica se as credenciais fornecidas correspondem a alguma das credenciais válidas
-    const isValid = validCredentials.some(cred => cred.username === username && cred.password === password);
-
-    if (isValid) {
-        // Redireciona para a página de dashboard se as credenciais forem válidas
-        window.location.href = 'dashboard.html'; // Substitua pelo caminho da página para onde deseja redirecionar
+    // Simulando a validação (exemplo simples)
+    if (username === "" || password === "") {
+        errorMessage.textContent = "Preencha todos os campos.";
+    } else if (username !== "admin" || password !== "123456") {
+        errorMessage.textContent = "Usuário ou senha incorretos.";
     } else {
-        // Exibe uma mensagem de erro se as credenciais não forem válidas
-        alert('Nome de usuário ou senha incorretos. Por favor, tente novamente.');
+        errorMessage.textContent = "";
+        alert("Login bem-sucedido!");
+        // Redirecionar para outra página ou realizar outras ações
     }
 });
