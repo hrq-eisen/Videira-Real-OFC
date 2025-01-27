@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banco Digital Desbravadores</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Arquivo CSS para o estilo -->
+    <title>Extrato Bancário - Banco Inter</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Arquivo CSS -->
 </head>
 <body>
 
@@ -16,54 +16,71 @@
         <nav>
             <ul>
                 <li><a href="#conta">Conta</a></li>
+                <li><a href="#extrato">Extrato</a></li>
                 <li><a href="#cartao">Cartão</a></li>
-                <li><a href="#empréstimos">Empréstimos</a></li>
-                <li><a href="#suporte">Suporte</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Seção de Introdução -->
-    <section class="intro">
-        <div class="intro-content">
-            <h1>Banco Digital Videira Real</h1>
-            <p>Seu banco sem tarifas, sem burocracia e com tudo que você precisa na palma da sua mão.</p>
-            <a href="#abra-conta" class="cta-button">Abra sua conta agora</a>
+    <!-- Seção de Extrato Bancário -->
+    <section class="extrato">
+        <div class="extrato-header">
+            <h1>Extrato da Conta</h1>
+            <p>Data: <span id="data">27/01/2025</span></p>
         </div>
-    </section>
 
-    <!-- Seção de Benefícios -->
-    <section class="benefits" id="benefits">
-        <h2>Vantagens de ser cliente Banco Desbravador</h2>
-        <div class="benefit">
-            <h3>Sem Tarifas</h3>
-            <p>Com o Banco Desbravador, você não paga taxas para realizar transações bancárias.</p>
+        <!-- Saldo Atual -->
+        <div class="saldo">
+            <h2>Saldo Atual</h2>
+            <p class="saldo-valor" id="saldo-valor">R$ 1.250,00</p>
         </div>
-        <div class="benefit">
-            <h3>Cartão de Crédito Sem Anuidade</h3>
-            <p>Com o cartão Desbrava, você aproveita a vida sem preocupações com taxas de anuidade.</p>
-        </div>
-        <div class="benefit">
-            <h3>Empréstimos com Taxas Baixas</h3>
-            <p>Oferecemos opções de crédito com taxas reduzidas e prazos flexíveis.</p>
-        </div>
-    </section>
 
-    <!-- Seção de Chamada para Ação -->
-    <section class="cta">
-        <h2>Pronto para dar o próximo passo?</h2>
-        <p>Abrir uma conta no Banco Desbravador é rápido e fácil. Junte-se a nós e descubra um novo jeito de se relacionar com seu dinheiro!</p>
-        <a href="#abra-conta" class="cta-button">Abrir Conta</a>
+        <!-- Histórico de Transações -->
+        <div class="transacoes">
+            <h2>Últimas Transações</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data</th>
+                        <th>Descrição</th>
+                        <th>Débito</th>
+                        <th>Crédito</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>25/01/2025</td>
+                        <td>Compra Supermercado</td>
+                        <td class="debito">-R$ 150,00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>24/01/2025</td>
+                        <td>Transferência para João</td>
+                        <td class="debito">-R$ 200,00</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>23/01/2025</td>
+                        <td>Depósito em Conta</td>
+                        <td></td>
+                        <td class="credito">R$ 500,00</td>
+                    </tr>
+                    <tr>
+                        <td>22/01/2025</td>
+                        <td>Pagamento Netflix</td>
+                        <td class="debito">-R$ 49,90</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
 
     <!-- Rodapé -->
     <footer>
         <div class="footer-content">
-            <p>&copy; 2025 Banco Digital Videira Real. Todos os direitos reservados.</p>
-            <ul>
-                <li><a href="#">Privacidade</a></li>
-                <li><a href="#">Termos de Uso</a></li>
-            </ul>
+            <p>&copy; 2025 Banco Digital Inter. Todos os direitos reservados.</p>
         </div>
     </footer>
 
