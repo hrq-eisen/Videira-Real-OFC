@@ -1,71 +1,118 @@
-body {
-    font-family: Arial, sans-serif;
-    background: url('caminho-para-sua-imagem-de-fundo.jpg') no-repeat center center fixed;
-    background-size: cover;
+/* Reset básico */
+ {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
-    color: #fff;
-}
-
-.login-container {
-    background: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente */
+    background-color: #ff7100;
     padding: 20px;
-    border-radius: 10px;
-    width: 300px;
-    text-align: center;
+    color: white;
 }
 
-.logo {
-    width: 80%;
+header .logo img {
+    height: 50px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Seção de Introdução */
+.intro {
+    background-color: #ff7100;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.intro h1 {
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
-h1 {
-    margin: 0 0 20px;
-    font-size: 24px;
+.intro p {
+    font-size: 20px;
+    margin-bottom: 30px;
 }
 
-input {
-    width: 90%;
-    padding: 10px;
-    margin: 10px 0;
+.cta-button {
+    background-color: white;
+    color: #ff7100;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
-}
-
-button {
-    width: 90%;
-    padding: 10px;
-    background-color: #ff5100;
-    border: none;
-    border-radius: 5px;
-    color: white;
     font-size: 16px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #ffa600;
-}
-
-.links {
-    margin-top: 10px;
-}
-
-.links a {
-    color: #eeff00;
     text-decoration: none;
 }
 
-.links a:hover {
-    text-decoration: underline;
+/* Seção de Benefícios */
+.benefits {
+    text-align: center;
+    padding: 50px 20px;
 }
 
-html {
-    background: url(logo-do-clube-videirareal.png) no-repeat center fixed;
-    background-size: cover;
-  } 
+.benefits h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.benefit {
+    margin: 20px 0;
+}
+
+.benefit h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.benefit p {
+    font-size: 16px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+footer ul li {
+    margin-left: 20px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
