@@ -1,5 +1,5 @@
 /* Reset básico */
- {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -41,56 +41,84 @@ header nav ul li a {
     font-weight: bold;
 }
 
-/* Seção de Introdução */
-.intro {
-    background-color: #ff7100;
-    color: white;
+/* Seção de Extrato Bancário */
+.extrato {
+    padding: 40px 20px;
+}
+
+.extrato-header {
     text-align: center;
-    padding: 80px 20px;
-}
-
-.intro h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.intro p {
-    font-size: 20px;
     margin-bottom: 30px;
 }
 
-.cta-button {
-    background-color: white;
-    color: #ff7100;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-/* Seção de Benefícios */
-.benefits {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.benefits h2 {
+.extrato-header h1 {
     font-size: 28px;
-    margin-bottom: 30px;
-}
-
-.benefit {
-    margin: 20px 0;
-}
-
-.benefit h3 {
-    font-size: 22px;
     margin-bottom: 10px;
 }
 
-.benefit p {
+.extrato-header p {
     font-size: 16px;
+    color: #666;
+}
+
+/* Saldo Atual */
+.saldo {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.saldo h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.saldo-valor {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff7100;
+}
+
+/* Histórico de Transações */
+.transacoes {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.transacoes h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+.debito {
+    color: #e74c3c; /* Vermelho para débito */
+}
+
+.credito {
+    color: #27ae60; /* Verde para crédito */
 }
 
 /* Rodapé */
@@ -101,18 +129,6 @@ footer {
     padding: 20px;
 }
 
-footer ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-footer ul li {
-    margin-left: 20px;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
+footer .footer-content p {
+    font-size: 14px;
 }
