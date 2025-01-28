@@ -8,13 +8,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     // Dados fictícios para autenticação (apenas para exemplo)
     var validUsername = "Hortencia";
     var validPassword = "diretoria2025";
-    
-    var validUsername = "Gisele";
-    var validPassword = "diretoria2025";
-    
-    var validUsername = "Filipe";
-    var validPassword = "diretoria2025";
-    
+
     // Validação de login (caso insensível a maiúsculas/minúsculas)
     if (username === "" || password === "") {
         errorMessage.textContent = "Por favor, preencha todos os campos.";
