@@ -6,8 +6,8 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     var errorMessage = document.getElementById('error-message');
 
     // Dados fictícios para autenticação (apenas para exemplo)
-    var validUsername = "Hortencia";
-    var validPassword = "diretoria2025";
+    var validUsername = "executivo";
+    var validPassword = "diretores25";
 
     // Validação de login (caso insensível a maiúsculas/minúsculas)
     if (username === "" || password === "") {
