@@ -74,27 +74,3 @@ button:hover {
     font-size: 14px;
     margin-top: 10px;
 }
-
-/* Resetando margens e preenchimentos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-}
-
-header {
-    width: 100%;
-    text-align: center;
-    background-color: #f4f4f4; /* Cor de fundo do cabeçalho */
-    padding: 20px 0; /* Espaçamento ao redor da imagem */
-}
-
-.logo {
-    max-width: 100%; /* Faz com que a imagem não ultrapasse o tamanho da tela */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
