@@ -74,3 +74,28 @@ button:hover {
     font-size: 14px;
     margin-top: 10px;
 }
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+}
+
+header {
+    background-color: #f1f1f1; /* Cor de fundo do cabeçalho */
+    display: flex;
+    justify-content: center; /* Alinha a imagem no centro horizontalmente */
+    align-items: center; /* Alinha a imagem no centro verticalmente */
+    height: 100px; /* Altura do cabeçalho */
+}
+
+.logo-container img {
+    max-height: 80px; /* Limita a altura da imagem, caso seja necessário */
+    width: auto; /* Garante que a imagem não fique deformada */
+}
+
