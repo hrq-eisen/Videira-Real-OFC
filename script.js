@@ -1,18 +1,18 @@
 document.getElementById('loginForm').addEventListener('submit', function(event) {
     event.preventDefault();
 
-    var username = document.getElementById('username').value;
-    var password = document.getElementById('password').value;
+    var username = document.getElementById('username').value.trim();  // remove espaços extras
+    var password = document.getElementById('password').value.trim();  // remove espaços extras
     var errorMessage = document.getElementById('error-message');
 
     // Dados fictícios para autenticação (apenas para exemplo)
-    var validUsername = "Hortencia";
-    var validPassword = "diretora2025";
+    var validUsername = "usuario123";
+    var validPassword = "senha123";
 
-    // Validação de login
+    // Validação de login (caso insensível a maiúsculas/minúsculas)
     if (username === "" || password === "") {
         errorMessage.textContent = "Por favor, preencha todos os campos.";
-    } else if (username !== validUsername || password !== validPassword) {
+    } else if (username.toLowerCase() !== validUsername.toLowerCase() || password.toLowerCase() !== validPassword.toLowerCase()) {
         errorMessage.textContent = "Usuário ou senha incorretos.";
     } else {
         errorMessage.textContent = "";
