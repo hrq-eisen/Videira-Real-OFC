@@ -18,6 +18,6 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         errorMessage.textContent = "";
 
         // Redireciona para a página principal do banco
-        window.location.href = "pagina-principal.html";
+        window.location.href = "Dashboard.html";
     }
 });
