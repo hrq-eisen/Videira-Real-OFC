@@ -3,68 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extrato Bancário - Banco Inter</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Arquivo CSS -->
+    <title>Bem-vindo ao Banco XYZ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: #2193b0;
+        }
+
+        .btn-logout {
+            background-color: #ff4d4d;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn-logout:hover {
+            background-color: #ff1a1a;
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <img src="logo-inter.png" alt="Logo Banco Inter">
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#conta">Conta</a></li>
-                <li><a href="#extrato">Extrato</a></li>
-                <li><a href="#cartao">Cartão</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <h1>Bem-vindo ao Banco XYZ!</h1>
+        <p>Você está logado com sucesso. Agora pode acessar seus dados bancários e realizar operações.</p>
+        <button class="btn-logout" onclick="logout()">Sair</button>
+    </div>
 
-    <!-- Seção de Extrato Bancário -->
-    <section class="extrato">
-        <div class="extrato-header">
-            <h1>Extrato da Conta</h1>
-            <p>Data: <span id="data">27/01/2025</span></p>
-        </div>
-
-        <!-- Saldo Atual -->
-        <div class="saldo">
-            <h2>Saldo Atual</h2>
-            <p class="saldo-valor" id="saldo-valor">R$ 1.250,00</p>
-        </div>
-
-        <!-- Histórico de Transações -->
-        <div class="transacoes">
-            <h2>Últimas Transações</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Data</th>
-                        <th>Descrição</th>
-                        <th>Débito</th>
-                        <th>Crédito</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>25/01/2025</td>
-                        <td>Pontos Mennsal acumulado</td>
-                        <td class="debito">+R$ 150,00</td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Banco Digital Inter. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-
+    <script>
+        // Função de logout para redirecionar de volta para a tela de login
+        function logout() {
+            window.location.href = "index.html";  // Redireciona para a página de login
+        }
+    </script>
+    
 </body>
 </html>
