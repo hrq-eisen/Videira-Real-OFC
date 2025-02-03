@@ -3,31 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Banco DBV</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Assistência técnica e manutenção de ar condicionado. Conserto e limpeza com profissionais qualificados.">
+    <title>Assistência Técnica Ar Condicionado</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  
-    <div class="login-container">
-        <div class="login-box">
-            <h2>Banco DBV</h2>
-            <form id="loginForm">
-                <div class="input-group">
-                    <label for="username">Usuário</label>
-                    <input type="text" id="username" name="username" required placeholder="Digite seu usuário">
-                </div>
-                <div class="input-group">
-                    <label for="password">Senha</label>
-                    <input type="password" id="password" name="password" required placeholder="Digite sua senha">
-                </div>
-                <div class="input-group">
-                    <button type="submit" id="loginBtn">Entrar</button>
-                </div>
-                <div id="error-message"></div>
+
+    <header>
+        <div class="container">
+            <h1>Assistência Técnica Ar Condicionado</h1>
+            <nav>
+                <ul>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#sobre">Sobre Nós</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h2>Manutenção e Reparo de Ar Condicionado</h2>
+            <p>Serviços especializados para o seu conforto e bem-estar. Realizamos manutenção preventiva, limpeza, reparos e instalação de ar condicionado.</p>
+            <a href="#contato" class="btn">Solicite um Orçamento</a>
+        </div>
+    </section>
+
+    <section id="servicos" class="services">
+        <div class="container">
+            <h2>Serviços</h2>
+            <div class="service-item">
+                <h3>Manutenção Preventiva</h3>
+                <p>Evite problemas no seu ar condicionado com revisões periódicas.</p>
+            </div>
+            <div class="service-item">
+                <h3>Instalação de Ar Condicionado</h3>
+                <p>Instalação rápida e segura de ar condicionado de todos os modelos.</p>
+            </div>
+            <div class="service-item">
+                <h3>Limpeza e Higienização</h3>
+                <p>Limpeza completa para melhorar o desempenho e a qualidade do ar.</p>
+            </div>
+            <div class="service-item">
+                <h3>Reparos e Consertos</h3>
+                <p>Consertos rápidos para garantir que seu ar condicionado funcione perfeitamente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma empresa especializada em assistência técnica de ar condicionado com mais de 10 anos de experiência. Nossos profissionais são altamente qualificados e garantem serviços de qualidade e eficiência.</p>
+        </div>
+    </section>
+
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p>Solicite seu orçamento ou tire suas dúvidas!</p>
+            <form action="mailto:seuemail@dominio.com" method="post" enctype="text/plain">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Enviar</button>
             </form>
         </div>
-    </div>
+    </section>
 
-    <script src="script.js"></script>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Assistência Técnica Ar Condicionado | Todos os direitos reservados</p>
+        </div>
+    </footer>
+
 </body>
 </html>
