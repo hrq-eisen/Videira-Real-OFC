@@ -3,85 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Assistência técnica e manutenção de ar condicionado. Conserto e limpeza com profissionais qualificados.">
-    <title>Assistência Técnica Ar Condicionado</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Assistência Técnica de Ar Condicionado</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Aqui você pode linkar um arquivo CSS externo -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        section {
+            padding: 20px;
+            margin-top: 20px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #003366;
+        }
+        .service-list {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .service-item {
+            width: 30%;
+            background-color: #e0e0e0;
+            padding: 15px;
+            margin: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .service-item h3 {
+            color: #003366;
+        }
+        form input, form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        form button {
+            background-color: #003366;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
 </head>
 <body>
 
     <header>
         <div class="container">
-            <h1>Assistência Técnica Ar Condicionado</h1>
-            <nav>
-                <ul>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#sobre">Sobre Nós</a></li>
-                    <li><a href="#contato">Contato</a></li>
-                </ul>
-            </nav>
+            <h1>Assistência Técnica e Manutenção de Ar Condicionado</h1>
         </div>
     </header>
 
-    <section id="home">
-        <div class="container">
-            <h2>Manutenção e Reparo de Ar Condicionado</h2>
-            <p>Serviços especializados para o seu conforto e bem-estar. Realizamos manutenção preventiva, limpeza, reparos e instalação de ar condicionado.</p>
-            <a href="#contato" class="btn">Solicite um Orçamento</a>
-        </div>
-    </section>
+    <div class="container">
+        <section>
+            <h2>Sobre nós</h2>
+            <p>Somos uma empresa especializada em assistência técnica e manutenção de sistemas de ar condicionado. Com mais de 10 anos de experiência, oferecemos serviços de alta qualidade para garantir o conforto e a eficiência do seu ambiente.</p>
+        </section>
 
-    <section id="servicos" class="services">
-        <div class="container">
+        <section>
             <h2>Serviços</h2>
-            <div class="service-item">
-                <h3>Manutenção Preventiva</h3>
-                <p>Evite problemas no seu ar condicionado com revisões periódicas.</p>
+            <div class="service-list">
+                <div class="service-item">
+                    <h3>Manutenção Preventiva</h3>
+                    <p>Evite problemas futuros com a manutenção preventiva de seu ar condicionado.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Reparo e Troca de Peças</h3>
+                    <p>Consertamos qualquer tipo de defeito e realizamos troca de peças originais.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Instalação de Ar Condicionado</h3>
+                    <p>Realizamos a instalação de sistemas de ar condicionado com profissionais qualificados.</p>
+                </div>
             </div>
-            <div class="service-item">
-                <h3>Instalação de Ar Condicionado</h3>
-                <p>Instalação rápida e segura de ar condicionado de todos os modelos.</p>
-            </div>
-            <div class="service-item">
-                <h3>Limpeza e Higienização</h3>
-                <p>Limpeza completa para melhorar o desempenho e a qualidade do ar.</p>
-            </div>
-            <div class="service-item">
-                <h3>Reparos e Consertos</h3>
-                <p>Consertos rápidos para garantir que seu ar condicionado funcione perfeitamente.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="sobre" class="about">
-        <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>Somos uma empresa especializada em assistência técnica de ar condicionado com mais de 10 anos de experiência. Nossos profissionais são altamente qualificados e garantem serviços de qualidade e eficiência.</p>
-        </div>
-    </section>
-
-    <section id="contato" class="contact">
-        <div class="container">
-            <h2>Entre em Contato</h2>
-            <p>Solicite seu orçamento ou tire suas dúvidas!</p>
-            <form action="mailto:seuemail@dominio.com" method="post" enctype="text/plain">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" name="nome" required>
-
-                <label for="email">E-mail:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="mensagem">Mensagem:</label>
-                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-                <button type="submit" class="btn">Enviar</button>
+        <section>
+            <h2>Solicite um Orçamento</h2>
+            <form action="#" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu e-mail" required>
+                <textarea name="mensagem" placeholder="Descreva o problema ou solicitação" required></textarea>
+                <button type="submit">Enviar Solicitação</button>
             </form>
-        </div>
-    </section>
+        </section>
+    </div>
 
     <footer>
-        <div class="container">
-            <p>&copy; 2025 Assistência Técnica Ar Condicionado | Todos os direitos reservados</p>
-        </div>
+        <p>&copy; 2025 Assistência Técnica e Manutenção de Ar Condicionado | Todos os direitos reservados</p>
     </footer>
 
 </body>
